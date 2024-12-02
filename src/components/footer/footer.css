@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    width: 100%;
+    height: 686px;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-links{
+    width: 100%;
+    padding: 50px 100px;
+    /* border: 1px solid black; */
+    color: #2A2523;
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+}
+
+.footer-links ul{
+    padding: 0;
+    margin: 0;
+    /* width: 194.9px; */
+    /* height: 144px; */
+}
+
+.footer-links ul li{
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-links ul li:hover{
+    transform: translateX(10px);
+}
+
+.copyright-div{
+    width: 100%;
+    padding: 32px 100px;
+    color: #2A2523;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+/* Color Palette */
+.color-palette{
+    width: 100%;
+    height: 352px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.rectangle{
+    /* width: 67px; */
+    flex-grow: 1;
+    height: 352px;
+}
+
+.color-name{
+    size: 16px;
+    line-height: 22.4px;
+    font-weight: 600;
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    margin: 20px 7px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.rectangle:hover .color-name{
+    opacity: 1;
+}
+
+/* media query */
+@media screen and (max-width: 1355px) {
+    .footer-links{
+        padding: 50px;
+    }
+
+    .footer-links ul li{
+        font-size: 14px;
+    }
+
+    .copyright-div{
+        padding: 32px 50px;
+    }
+}
+
+@media screen and (max-width: 1190px){
+    .footer-links ul li{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .footer-links{
+        padding: 50px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .footer-links ul li{
+        font-size: 14px;
+    }
+
+    .copyright-div{
+        padding: 25px 20px;
+        font-size: 14px;
+        line-height: 22.4px;
+        display: flex;
+        flex-direction: column;
+    }
+}

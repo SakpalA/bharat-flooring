@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sofa-img{
+    width: 100%;
+    height: 1086px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(220.84deg, rgba(0, 0, 0, 0) 54.03%, rgba(0, 0, 0, 0.6) 94.39%), url(../../assets/images/sofaImg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 80px 80px 0 0;
+    padding: 925px 0 0 100px;
+}
+
+.sofa-text{
+    font-family: "Gloock", serif;
+    color: #fffef2;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.sofa-arrow{
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 1589){
+    .sofa-img{
+        height: 700px;
+        padding: 660px 0 0 100px;
+    }
+}
+
+@media screen and (max-width: 1355px){
+    .sofa-img{
+        height: 600px;
+        padding: 473px 0 0 50px;
+    }
+}
+
+@media screen and (max-width: 1074px){
+    .sofa-text{
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sofa-img{
+        padding: 506px 0 0 20px;
+    }
+
+    .sofa-text{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 599px){
+    .sofa-img{
+        height: 505px;
+        padding: 415px 0 0 20px;
+    }
+
+    .sofa-arrow{
+        margin-left: 2px;
+    }
+}

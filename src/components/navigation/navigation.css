@@ -1,5 +1,161 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 98.6px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 104px;
+}
+
+.black-img {
+    position: relative;
+    width: 102px;
+    height: 125px;
+}
+
+.nav-logo {
+    position: absolute;
+    top: 18px;
+    left: 120px;
+    width: 69.6px;
+    height: 69.6px;
+}
+
+.nav-logo2 {
+    display: none;
+}
+
+.nav-menu {
+    width: 46px;
+    height: 46px;
+    display: none;
+}
+
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 290px;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    color: #fffef2;
+    cursor: pointer;
+}
+
+/* Side bar styling */
+
+.offcanvas-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.side-ul {
+    margin: 0;
+    padding: 0;
+}
+
+.side-ul li {
+    list-style-type: none;
+    padding: 15px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.side-ul li:hover {
+    background-color: #2A2523;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1750px) {
+    nav ul {
+        gap: 240px;
+    }
+}
+
+@media screen and (max-width: 1589px) {
+    nav ul {
+        gap: 190px;
+    }
+}
+
+@media screen and (max-width: 1355px) {
+    nav ul {
+        gap: 100px;
+    }
+
+    nav {
+        padding: 26px 50px;
+    }
+
+    .nav-logo {
+        top: 18px;
+        left: 65px;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+    nav ul {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        padding: 21px 20px;
+    }
+
+    .nav-logo {
+        top: 18px;
+        left: 35px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .nav-menu {
+        width: 24px;
+        height: 14px;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-logo2 {
+        display: block;
+    }
+
+    .black-img {
+        display: none;
+    }
 }
