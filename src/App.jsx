@@ -3,6 +3,9 @@ import Footer from './components/footer/Footer';
 import SofaImage from './components/sofa image/SofaImage';
 import OneLine from './components/common component/one-line-text/OneLine';
 import HeroSection from './components/hero section/HeroSection';
+import IntroOne from './components/intro one/IntroOne';
+import IntroTwo from './components/intro two/IntroTwo';
+import ImageClick from './components/common component/image click/ImageClick';
 
 function App() {
   return (
@@ -11,6 +14,9 @@ function App() {
       <OneLine 
       textOne= 'Who we are'
       textThree= '100 years old'/>
+      <IntroOne />
+      <ImageClick />
+      <IntroTwo />
       <OneLine 
       textOne= '4899 projects'
       textTwo= '+3 million tiles placed'

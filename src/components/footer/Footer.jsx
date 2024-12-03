@@ -1,11 +1,13 @@
 import React from 'react';
 import './footer.css';
 import ColorPalette from './ColorPalette';
+import logo from '../../assets/svgs/footer-logo.svg';
 
 const Footer = () => {
     return (
         <footer className='footer'>
             <ColorPalette />
+            <img src={logo} alt="" className='footer-logo'/>
             <div className='footer-links'>
                 <ul>
                     <li>about us</li>

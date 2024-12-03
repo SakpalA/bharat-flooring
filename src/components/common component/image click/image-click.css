@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-click-sec{
+    width: 100%;
+    height: 1083px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.main-img{
+    width: 1623px;
+    height: 100%;
+}
+
+.current-img{
+    width: 100%;
+    height: 100%;
+}
+
+.all-img{
+    width: 297px;
+    height: 100%;
+}
+
+.img-div{
+    width: 100%;
+    height: 361px;
+    overflow: hidden;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.img:hover{
+    transform: scale(1.2);
+}
