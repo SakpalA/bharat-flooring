@@ -7,7 +7,8 @@
 .text-sec {
     width: 100%;
     height: 36px;
-    padding: 0 104px;
+    /* padding: 0 104px; */
+    /* margin-bottom: 50px; */
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -17,21 +18,8 @@
     align-items: center;
 }
 
-@media screen and (max-width: 1355px) {
-    .text-sec {
-        padding: 0 50px;
-    }
-}
-
 @media screen and (max-width: 900px) {
     .text-sec {
-        /* padding: 0 20px; */
         display: none;
     }
 }
-
-/* @media screen and (max-width: 599px){
-    .text-sec{
-        display: none;
-    }
-} */

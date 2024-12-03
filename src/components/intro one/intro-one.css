@@ -7,9 +7,14 @@
 .intro-one-sec {
     width: 100%;
     height: fit-content;
-    padding: 100px 104px;
+    padding: 50px 104px 100px 104px;
     color: #2A2523;
     /* border: 1px solid black; */
+    background-color: #fefef2;
+}
+
+.intro-one-div{
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -113,7 +118,7 @@
 
 @media screen and (max-width: 1355px){
     .intro-one-sec{
-        padding: 100px 50px;
+        padding: 50px 50px 100px 50px;
     }
 
     .intro-one-content{
@@ -179,6 +184,10 @@
         padding: 100px 20px;
     }
 
+    .intro-one-div{
+        margin-top: 0;
+    }
+
     .intro-img{
         height: 360px;
     } 
@@ -218,7 +227,7 @@
 }
 
 @media screen and (max-width: 727px){
-    .intro-one-sec{
+    .intro-one-div{
         flex-direction: column;
     }
 

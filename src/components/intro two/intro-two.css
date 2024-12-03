@@ -7,7 +7,12 @@
 .intro-two-sec{
     width: 100%;
     height: fit-content;
-    padding: 100px 104px;
+    padding: 50px 104px;
+    background-color: #fefef2;
+}
+
+.intro-two-div{
+    padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,13 +42,13 @@
 
 @media screen and (max-width: 1355px){
     .intro-two-sec{
-        padding: 100px 50px;
+        padding: 50px;
     }
 }
 
 @media screen and (max-width: 900px){
     .intro-two-sec{
-        padding: 100px 20px;
+        padding: 50px 20px;
     }
 
     .intro-two-head{

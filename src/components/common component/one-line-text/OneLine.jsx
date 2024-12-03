@@ -3,11 +3,11 @@ import './oneline.css';
 
 const OneLine = ({textOne, textTwo, textThree}) => {
   return (
-    <section className='text-sec'>
+    <div className='text-sec'>
         <span>{textOne}</span>
         <span>{textTwo}</span>
         <span>{textThree}</span>
-    </section>
+    </div>
   )
 }
 

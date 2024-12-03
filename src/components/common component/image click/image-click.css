@@ -43,3 +43,54 @@
 .img:hover{
     transform: scale(1.2);
 }
+
+/* media query */
+@media screen and (max-width: 1921px){
+    .img-click-sec{
+        height: 100vh;
+    }
+
+    .main-img{
+        width: 80%;
+    }
+
+    .all-img{
+        width: 20%;
+    }
+
+    .img-div{
+        height: 33.33vh;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .main-img{
+        width: 70%;
+    }
+
+    .all-img{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .img-click-sec{
+        height: 750px;
+    }
+    .main-img{
+        display: none;
+    }
+
+     .all-img{
+        width: 100%;
+     }
+
+     .img-div{
+        height: 250px;
+     }
+
+     .img{
+        object-fit: fill;
+        object-position: center;
+     }
+}
