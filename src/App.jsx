@@ -12,6 +12,7 @@ import image3 from './assets/images/image3.jpeg';
 import image4 from './assets/images/image4.jpeg';
 import image5 from './assets/images/image5.jpeg';
 import image6 from './assets/images/image6.jpeg';
+import SmallTilesSec from './components/small tiles sec/SmallTilesSec';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         image1={image4}
         image2={image5}
         image3={image6} />
+      <SmallTilesSec />
       <SofaImage />
       <Footer />
     </div>

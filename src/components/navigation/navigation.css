@@ -14,18 +14,20 @@ nav {
     padding: 26px 104px;
 }
 
-.black-img {
+/* .black-img {
     position: relative;
     width: 102px;
     height: 125px;
-}
+} */
 
 .nav-logo {
-    position: absolute;
+    /* position: absolute;
     top: 18px;
-    left: 120px;
-    width: 69.6px;
-    height: 69.6px;
+    left: 120px; */
+    /* width: 69.6px;
+    height: 69.6px; */
+    width: 102px;
+    height: 125px;
 }
 
 .nav-logo2 {
@@ -87,7 +89,6 @@ nav ul li {
     color: #fff;
 }
 
-
 @media screen and (max-width: 1750px) {
     nav ul {
         gap: 240px;
@@ -109,10 +110,10 @@ nav ul li {
         padding: 26px 50px;
     }
 
-    .nav-logo {
+    /* .nav-logo {
         top: 18px;
         left: 65px;
-    }
+    } */
 }
 
 @media screen and (max-width: 1074px) {
@@ -126,9 +127,17 @@ nav ul li {
         padding: 21px 20px;
     }
 
-    .nav-logo {
+    /* .nav-logo {
         top: 18px;
         left: 35px;
+    } */
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-logo2 {
+        display: block;
     }
 
     nav ul {
@@ -145,14 +154,6 @@ nav ul li {
     .nav-menu {
         width: 24px;
         height: 14px;
-    }
-
-    .nav-logo {
-        display: none;
-    }
-
-    .nav-logo2 {
-        display: block;
     }
 
     .black-img {

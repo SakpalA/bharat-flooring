@@ -7,18 +7,18 @@ import SideBar from './SideBar';
 
 const Navigation = () => {
   return (
-    <nav>
-      <img src={image} alt="black image" className='black-img'/>
-      <img src={logo} alt="Logo" className='nav-logo' />
-      <img src={mobileLogo} alt="Logo" className='nav-logo2' />
-      <ul>
-        <li>Products</li>
-        <li>Services</li>
-        <li>About</li>
-        <li>Inspiratio</li>
-      </ul>
-      <SideBar />
-    </nav>
+      <nav className='main-nav'>
+        {/* <img src={image} alt="black image" className='black-img' /> */}
+        <img src={logo} alt="Logo" className='nav-logo' />
+        <img src={mobileLogo} alt="Logo" className='nav-logo2' />
+        <ul className='main-ul'>
+          <li>Products</li>
+          <li>Services</li>
+          <li>About</li>
+          <li>Inspiratio</li>
+        </ul>
+        <SideBar />
+      </nav>
   )
 }
 

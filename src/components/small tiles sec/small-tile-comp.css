@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.small-tiles-comp{
+    width: 100%;
+    background-color: #fefef2;
+    padding: 50px 104px;
+}
+
+/* media query */
+@media screen and (max-width: 1355px) {
+    .small-tiles-comp{
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .small-tiles-comp{
+        padding: 50px 20px;
+    }
+}

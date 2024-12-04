@@ -133,7 +133,12 @@
 }
 
 @media screen and (max-width: 900px){
+    .footer{
+        background-color: #fefef2;
+    }
+
     .footer-links{
+        background-color: #fefef2;
         padding: 50px 20px;
         display: flex;
         justify-content: space-between;
@@ -145,6 +150,7 @@
     }
 
     .copyright-div{
+        background-color: #fefef2;
         padding: 25px 20px;
         font-size: 14px;
         line-height: 22.4px;

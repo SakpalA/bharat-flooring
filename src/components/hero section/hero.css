@@ -14,10 +14,14 @@
     background-size: cover;
 }
 
+.hero-sec{
+    padding: 257px 104px 0 104px;
+}
+
 .hero-div {
     width: 100%;
     height: 414.8px;
-    padding: 257px 0 0 104px;
+    /* padding: 257px 0 0 104px; */
     font-family: "Gloock", serif;
     color: #ffffff;
 }
@@ -36,13 +40,13 @@
 }
 
 @media screen and (max-width: 1355px) {
-    .hero-div {
-        padding-left: 50px;
+    .hero-sec {
+        padding: 257px 50px 50px 50px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .hero-div {
+    .hero-sec {
         padding: 230px 20px;
     }
 
@@ -62,6 +66,7 @@
     }
 
     .hero-div {
+        height: 300px;
         text-align: center;
     }
 
