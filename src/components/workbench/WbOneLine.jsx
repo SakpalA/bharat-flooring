@@ -6,7 +6,7 @@ const WbOneLine = () => {
     const colors = ['#236A9A', '#DF998F', '#5BA9C9', '#FFFFFF', '#B64357'];
   return (
     <div className='wb-one-line'>
-        <div className='color-div'>
+        <div className='wb-color-div'>
             {colors.map((color, index) => (
                 <div key={index} style={{ backgroundColor: color}} className='single-color'></div>
             ))}

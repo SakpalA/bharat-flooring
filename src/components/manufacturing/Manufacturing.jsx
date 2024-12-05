@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './manufacturing.css';
 import OneLine from '../common component/one-line-text/OneLine';
 import ManufactureProcess from './ManufactureProcess';
+import MobileManufacturing from './MobileManufacturing';
 
 const Manufacturing = () => {
+    const [isMobileVisible, setIsMobileVisible] = useState(window.innerWidth <= 900);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobileVisible(window.innerWidth <= 900)
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    },[]);
+
     return (
         <section className='manufac-sec'>
             <OneLine
@@ -18,7 +33,8 @@ const Manufacturing = () => {
                 <p className='man-head-para'>Each step has to be done well. <br />
                     The best European technologies were brought and modified to create a unique product suited to Indian conditions. Recognising that a good floor is only achieved with a good product that is installed correctly and maintained properly, the company has sister companies which do high quality installation of all types of floorings, a range of civil work, floor maintenance and general cleaning.</p>
             </div>
-            <ManufactureProcess />
+            {isMobileVisible ? <MobileManufacturing /> : <ManufactureProcess />}
+            
         </section>
     )
 }

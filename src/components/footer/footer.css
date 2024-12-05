@@ -17,7 +17,6 @@
 .footer-links{
     width: 100%;
     padding: 50px 100px;
-    /* border: 1px solid black; */
     color: #2A2523;
     display: flex;
     justify-content: space-between;
@@ -27,8 +26,6 @@
 .footer-links ul{
     padding: 0;
     margin: 0;
-    /* width: 194.9px; */
-    /* height: 144px; */
 }
 
 .footer-links ul li{
