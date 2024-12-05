@@ -15,6 +15,7 @@ import image6 from './assets/images/image6.jpeg';
 import SmallTilesSec from './components/small tiles sec/SmallTilesSec';
 import Workbench from './components/workbench/Workbench';
 import Product from './components/product/Product';
+import Manufacturing from './components/manufacturing/Manufacturing';
 
 function App() {
   return (
@@ -28,15 +29,12 @@ function App() {
       <IntroTwo />
       <Workbench />
       <Product />
-      <OneLine
-        textOne='6 steps'
-        textTwo='4 hours'
-        textThree='Handmade' />
       <ImageClick
         image1={image4}
         image2={image5}
         image3={image6} />
       <SmallTilesSec />
+      <Manufacturing />
       <SofaImage />
       <Footer />
     </div>
