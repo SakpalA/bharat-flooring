@@ -13,6 +13,8 @@ import image4 from './assets/images/image4.jpeg';
 import image5 from './assets/images/image5.jpeg';
 import image6 from './assets/images/image6.jpeg';
 import SmallTilesSec from './components/small tiles sec/SmallTilesSec';
+import Workbench from './components/workbench/Workbench';
+import Product from './components/product/Product';
 
 function App() {
   return (
@@ -24,10 +26,8 @@ function App() {
         image2={image2}
         image3={image3} />
       <IntroTwo />
-      <OneLine
-        textOne='69 products'
-        textTwo='30 colors'
-        textThree='100 years' />
+      <Workbench />
+      <Product />
       <OneLine
         textOne='6 steps'
         textTwo='4 hours'
