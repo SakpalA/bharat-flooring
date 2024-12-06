@@ -30,6 +30,7 @@
     width: 100%;
     height: 361px;
     overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .img{
@@ -42,6 +43,14 @@
 
 .img:hover{
     transform: scale(1.2);
+}
+
+.img.zoom{
+    transform: scale(1.2);
+}
+
+.img-div.active{
+    border: 2px solid #8697a8;
 }
 
 /* media query */
