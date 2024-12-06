@@ -14,14 +14,14 @@
     background-size: cover;
 }
 
-.hero-sec{
+.hero-sec {
     padding: 257px 104px 0 104px;
+    ;
 }
 
 .hero-div {
     width: 100%;
     height: 414.8px;
-    /* padding: 257px 0 0 104px; */
     font-family: "Gloock", serif;
     color: #ffffff;
 }
@@ -33,15 +33,46 @@
     font-weight: 100;
 }
 
-.hero-div h1 {
+.anime-div{
+    overflow: hidden;
+}
+
+.animated-text {
+    text-transform: uppercase;
     font-size: 142.85px;
     line-height: 185.7px;
     font-weight: 100;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    animation: slideInOut 1.5s ease-in-out infinite;
 }
 
+/* Ensures proper keyframe animation for text */
+@keyframes slideInOut {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    10%, 30% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50%, 100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/* Adjustments for smaller screens */
 @media screen and (max-width: 1355px) {
     .hero-sec {
         padding: 257px 50px 50px 50px;
+    }
+
+    .animated-text {
+        font-size: 90px;
+        line-height: 90px;
     }
 }
 
@@ -54,9 +85,9 @@
         font-size: 50px;
     }
 
-    .hero-div h1 {
-        font-size: 100px;
-        line-height: 100px;
+    .animated-text {
+        font-size: 50px;
+        line-height: 50px;
     }
 }
 
@@ -73,12 +104,10 @@
     .hero-div h2 {
         font-size: 30px;
         line-height: 26.51px;
-        letter-spacing: -1%;
     }
 
-    .hero-div h1 {
+    .animated-text {
         font-size: 42px;
         line-height: 37.12px;
-        letter-spacing: -1%;
     }
 }

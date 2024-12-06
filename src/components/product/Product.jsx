@@ -3,7 +3,6 @@ import './product.css';
 import OneLine from '../common component/one-line-text/OneLine';
 import { FaArrowRight } from "react-icons/fa6";
 import SingleProduct from './SingleProduct';
-import HoverProduct from './HoverProduct';
 
 const Product = () => {
     return (
